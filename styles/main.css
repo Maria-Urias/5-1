@@ -1,3 +1,9 @@
+:root {
+	--bg-color: aliceblue;
+	--accent-color: rebeccapurple;
+	--body-bg: white;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -5,16 +11,73 @@
 }
 
 html {
-	background-color: aliceblue;
+	background-color: var(--bg-color);
 }
 
 body {
 	width: 90%;
 	margin: 0 auto;
-	border: 3px double rebeccapurple;
-	background-color: white;
+	border: 3px double var(--accent-color);
+	background-color: var(--body-bg);
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
 	padding: 1.5em;
+}
+
+h1 {
+	font-size: 150%;
+	color: var(--accent-color);
+	margin-bottom: .5em;
+}
+
+h2 {
+	font-size: 125%;
+	margin: 1em 0 .5em;
+	clear: left;
+}
+
+h3 {
+	font-size: 115%;
+	margin-bottom: .75em;
+}
+
+p {
+	margin: 0 0 1em;
+}
+
+blockquote {
+	margin: 0 0 1em 2em;
+}
+
+ul {
+	margin: 0 0 1em 2em;
+}
+
+li {
+	margin-bottom: .5em;
+}
+
+cite {
+	color: var(--accent-color);
+	font-style: normal;
+	font-weight: bold;
+}
+
+img {
+	float: left;
+	margin: 0 1em 1em 0;
+}
+
+footer {
+	clear: left;
+	padding: 1em 0;
+}
+
+footer p {
+	font-size: 90%;
+	font-weight: bold;
+	text-align: center;
+	margin: .35em 0;
 }
